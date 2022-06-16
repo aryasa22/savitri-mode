@@ -12,6 +12,7 @@ const mobileNav = document.querySelector(".mobile-nav");
 burger.addEventListener("click", () => {
   mobileNav.classList.toggle("nav-appear");
   burger.classList.toggle("toggle");
+  document.body.classList.toggle("no-scroll");
 });
 
 // Smooth Scroll Animation
@@ -65,19 +66,22 @@ galleryBtn.addEventListener("click", () => {
 });
 
 contactBtnMobile.addEventListener("click", () => {
+  document.body.classList.remove("no-scroll");
   smoothScroll("#contact-section", 1000);
   mobileNav.classList.remove("nav-appear");
   burger.classList.remove("toggle");
 });
 
 servicesBtnMobile.addEventListener("click", () => {
-  smoothScroll("#services-section", 1000);
+  document.body.classList.remove("no-scroll");
+  smoothScroll("#services-section", 1500);
   mobileNav.classList.remove("nav-appear");
   burger.classList.remove("toggle");
 });
 
 galleryBtnMobile.addEventListener("click", () => {
-  smoothScroll("#gallery-section", 1000);
+  document.body.classList.remove("no-scroll");
+  smoothScroll("#gallery-section", 2000);
   mobileNav.classList.remove("nav-appear");
   burger.classList.remove("toggle");
 });
