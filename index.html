@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+      integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./app.js"></script>
+    <title>Savitri Mode</title>
+  </head>
+  <body>
+    <section id="home-section">
+      <nav class="navbar">
+        <div class="nav-brand">Savitri Mode</div>
+        <ul class="nav-links">
+          <li class="contact-link" data-contact>Contact Us</li>
+          <li class="services-link" data-services>Services</li>
+          <li class="gllery-link" data-gallery>Gallery</li>
+        </ul>
+        <div class="burger">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
+        </div>
+      </nav>
+      <main class="home-content">
+        <div class="intro">
+          <h1 class="hero-text">Savitri Mode</h1>
+          <p class="subtitle">Riasan terbaik dengan harga terjangkau</p>
+          <button class="order-button">Pesan Sekarang</button>
+        </div>
+        <div class="arrow-down">
+          <i class="fa-solid fa-angles-down"></i>
+        </div>
+      </main>
+      <div class="mobile-nav">
+        <li class="contact-link" data-contact-mobile>Contact Us</li>
+        <li data-services-mobile>Services</li>
+        <li data-gallery-mobile>Gallery</li>
+      </div>
+    </section>
+    <section id="services-section">
+      <div class="section-title">Services</div>
+      <div class="services-card-container">
+        <div class="service-card">
+          <h3 class="card-title">Paket 1</h3>
+          <div class="card-features">
+            <p><i class="fa-solid fa-check"></i> Make Up</p>
+            <p><i class="fa-solid fa-check"></i> Busana Kebaya</p>
+            <p><i class="fa-solid fa-check"></i> Photoshot</p>
+          </div>
+          <div class="card-price">Rp. 195.0000,-</div>
+        </div>
+        <div class="service-card pkg-2">
+          <h3 class="card-title">Paket 2</h3>
+          <div class="card-features">
+            <p><i class="fa-solid fa-check"></i> Make Up</p>
+            <p><i class="fa-solid fa-check"></i> Busana Kebaya</p>
+            <p><i class="fa-solid fa-xmark"></i> Photoshot</p>
+          </div>
+          <div class="card-price">Rp. 145.0000,-</div>
+        </div>
+        <div class="service-card pkg-3">
+          <h3 class="card-title">Paket 3</h3>
+          <div class="card-features">
+            <p><i class="fa-solid fa-check"></i> Make Up</p>
+            <p><i class="fa-solid fa-xmark"></i> Busana Kebaya</p>
+            <p><i class="fa-solid fa-xmark"></i> Photoshot</p>
+          </div>
+          <div class="card-price">Rp. 95.0000,-</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery-section">
+      <div class="section-title">Gallery</div>
+      <div class="gallery-content">
+        <div class="gallery-description">
+          <p>
+            Puluhan orang puas dengan pelayanan kami. Ini adalah beberapa foto
+            client yang sudah menggunakan jasa dari
+            <span>Savitri Mode</span>.
+          </p>
+          <button class="order-button">Pesan Sekarang</button>
+        </div>
+        <div class="gallery-images">
+          <div class="img-container pict-1">
+            <img src="./images/gallery/pict-2.jpg" alt="" />
+          </div>
+          <div class="img-container pict-2">
+            <img src="./images/gallery/pict-3.jpg" alt="" />
+          </div>
+          <div class="img-container pict-3">
+            <img src="./images/gallery/pict-4.jpg" alt="" />
+          </div>
+          <div class="img-container pict-4">
+            <img src="./images/gallery/pict-1.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-section">
+      <div class="section-title contact-title">Contact Us</div>
+      <div class="contact-form">
+        <form action="">
+          <input type="text" placeholder="Nama" />
+          <input type="email" name="" id="" placeholder="Email" />
+          <textarea
+            name="message"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Pesan"
+          ></textarea>
+          <input class="send-button" type="button" value="Kirim" />
+        </form>
+      </div>
+    </section>
+
+    <footer>Copyright &copy; 2022 Queen Beauty</footer>
+  </body>
+</html>
